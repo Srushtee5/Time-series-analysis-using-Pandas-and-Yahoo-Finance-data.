@@ -1,0 +1,27 @@
+Yahoo Finance _Stock Data _Time Series Analysis using Pandas
+Time series analysis using Pandas and Yahoo Finance data.
+
+Introduction
+This project report aims to provide insights into the data analysis of the S&P 500 ETF (SPY) using Pandas for Time Series Analysis. The dataset was obtained from Yahoo Finance, and the analysis focuses on understanding the differences between "Adj Close" and "Close" prices, calculating daily returns, and analyzing volatility.
+Data Collection
+The data was collected using the yfinance library, which allows fetching historical market data from Yahoo Finance. 
+Packages Used 
+1.	yfinance: Used to fetch historical market data from Yahoo Finance.
+2.	pandas: Used for data manipulation and analysis, including handling time series data.
+3.	numpy: Used for numerical computations and array operations.
+4.	plotly: Used for interactive visualizations.
+Data Analysis
+1. Understanding the Differences between "Adj Close" and "Close"
+The "Adj Close" and "Close" prices differ at the beginning of the time series. This difference is due to splits and dividends. The analysis revealed that dividends are quarterly, which explains why the "Adj Close" and "Close" prices are the same in recent years.
+2. Calculating Daily Returns
+Two methods were used to calculate daily returns:
+1.	Using the formula: (Today's Price / Yesterday's Price) - 1
+2.	Using the pct_change() function in Pandas
+Both methods yielded the same results, showing the daily percentage change in the "Adj Close" prices.
+3. Analyzing Volatility
+The volatility of SPY daily returns was calculated using the standard deviation. The standard deviation was chosen because it is a computationally simple way to measure the dispersion of data points from the mean. The rolling 1-month (21 days) volatility was also calculated to observe changes over time.
+4. Seasonality Analysis
+The analysis included a seasonality analysis to determine if certain days of the week are more volatile than others. The results showed that Mondays are not necessarily more volatile than other weekdays.
+Conclusion
+The analysis provided insights into the historical performance of the S&P 500 ETF (SPY), including understanding the differences between "Adj Close" and "Close" prices, calculating daily returns, analyzing volatility, and exploring seasonality. This information can be valuable for investors and analysts in making informed decisions.
+
